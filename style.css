@@ -1,0 +1,295 @@
+html, body {
+	text-align: center;
+	color: white;
+	background: linear-gradient(90deg, #3498db, #e74c3c);
+}
+#chose {
+	z-index: 2;
+}
+#choseHeader {
+	height: 10vh;
+	background-color: #1abc9c;
+	position: relative;
+	padding-top: 3vh;
+}
+#x, #o {
+	height: 90vh;
+	width: 50vw;
+	position: relative;
+}
+#x, #sideX {
+	background-color: #3498db;
+}
+#o, #sideO {
+	background-color: #e74c3c;
+}
+#game {
+	z-index: 1;
+	text-align: center;
+	position: relative;
+}
+#status {
+	background-color: #2ecc71;
+	height: 10vh;
+	position: relative;
+	display: none;
+}
+#sideX, #sideO {
+	height: 80vh;
+	position: relative;
+	display: none;
+}
+#sideX {
+	left: -100%;
+}
+#sideO {
+	right: -100%;
+}
+#comment {
+	background-color: #9b59b6;
+	height: 10vh;
+	position: relative;
+	bottom: -10vh;
+	display: none;
+}
+#gameboard{
+	display: none;
+	background-color: #f39c12;
+	height: 80vh;
+}
+#gameboard > div > div {
+	height: 50px;
+	width: 50px;
+	background-color: #f39c12;
+	position: relative;
+	padding-top: 10px;
+}
+#grid0, #grid1, #grid2 {
+	margin-top: 20vh;
+}
+#grid0, #grid3, #grid6 {
+	margin-left: -2vw;
+}
+#grid0 {
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+}
+#grid1 {
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+	border-left: 1px solid black;
+}
+#grid2 {
+	border-bottom: 1px solid black;
+	border-left: 1px solid black;
+}
+#grid3 {
+	border-top: 1px solid black;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+}
+#grid4 {
+	border: 1px solid black;
+}
+#grid5 {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	border-left: 1px solid black;
+}
+#grid6 {
+	border-top: 1px solid black;
+	border-right: 1px solid black;
+}
+#grid7 {
+	border-top: 1px solid black;
+	border-right: 1px solid black;
+	border-left: 1px solid black;
+}
+#grid8{
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+}
+
+@media only screen and (min-width: 320px) {
+	#grid0, #grid3, #grid6 {
+		margin-left: 6vw;
+	}
+	#status {
+		font-size: 20px;
+		padding-top: 2vh;
+	}
+	#comment {
+		font-size: 17px;
+		padding-top:  2vh;
+	}
+	#choseHeader {
+		font-size: 20px;
+		padding-top: 2vh;
+	}
+	#x, #o {
+		font-size: 100px;
+		padding-top: 30vh;
+	}
+	#sideX, #sideO{
+		font-size: 30px;
+		padding-top: 170px;
+	}
+	#gameboard > div > div {
+		font-size: 20px;
+	}
+}
+@media only screen and (min-width: 375px) {
+	#grid0, #grid3, #grid6 {
+		margin-left: 11vw;
+	}
+	#status {
+		font-size: 20px;
+		padding-top: 2vh;
+	}
+	#comment {
+		font-size: 17px;
+		padding-top:  2vh;
+	}
+	#choseHeader {
+		font-size: 20px;
+		padding-top: 2vh;
+	}
+	#x, #o {
+		font-size: 100px;
+		padding-top: 30vh;
+	}
+	#sideX, #sideO{
+		font-size: 33px;
+		padding-top: 170px;
+	}
+	#gameboard > div > div {
+		font-size: 20px;
+	}
+}
+@media only screen and (min-width: 425px) {
+	#gameboard > div > div {
+		width: 60px;
+		height: 60px;
+	}
+	#grid0, #grid3, #grid6 {
+		margin-left: 10vw;
+	}
+	#status {
+		font-size: 20px;
+		padding-top: 2vh;
+	}
+	#comment {
+		font-size: 17px;
+		padding-top:  2vh;
+	}
+	#choseHeader {
+		font-size: 20px;
+		padding-top: 2vh;
+	}
+	#x, #o {
+		font-size: 100px;
+		padding-top: 30vh;
+	}
+	#sideX, #sideO{
+		font-size: 35px;
+		padding-top: 170px;
+	}
+	#gameboard > div > div {
+		font-size: 20px;
+	}
+}
+@media only screen and (min-width: 768px) {
+	#grid0, #grid3, #grid6 {
+		margin-left: 12vw;
+	}
+	#gameboard > div > div {
+		width: 100px;
+		height: 100px;
+	}
+	#status {
+		font-size: 30px;
+		padding-top: 2vh;
+	}
+	#comment {
+		font-size: 20px;
+		padding-top:  2vh;
+	}
+	#choseHeader {
+		font-size: 25px;
+		padding-top: 2vh;
+	}
+	#x, #o {
+		font-size: 120px;
+		padding-top: 30vh;
+	}
+	#sideX, #sideO{
+		font-size: 50px;
+		padding-top: 200px;
+	}
+	#gameboard > div > div {
+		font-size: 50px;
+	}
+}
+@media only screen and (min-width: 1024px) {
+	#grid0, #grid3, #grid6 {
+		margin-left: 17vw;
+	}
+	#status {
+		font-size: 30px;
+		padding-top: 2vh;
+	}
+	#comment {
+		font-size: 20px;
+		padding-top:  2vh;
+	}
+	#choseHeader {
+		font-size: 25px;
+		padding-top: 2vh;
+	}
+	#x, #o {
+		font-size: 150px;
+		padding-top: 20vh;
+	}
+	#sideX, #sideO{
+		font-size: 70px;
+		padding-top: 200px;
+	}
+	#gameboard > div > div {
+		font-size: 48px;
+	}
+}
+@media only screen and (min-width: 1440px) {
+	#grid0, #grid3, #grid6 {
+		margin-left: 17vw;
+	}
+	#gameboard > div > div {
+		width: 140px;
+		height: 140px;
+	}
+	#status {
+		font-size: 30px;
+		padding-top: 2vh;
+	}
+	#comment {
+		font-size: 25px;
+		padding-top:  2vh;
+	}
+	#choseHeader {
+		font-size: 30px;
+		padding-top: 2vh;
+	}
+	#x, #o {
+		font-size: 200px;
+		padding-top: 25vh;
+	}
+	#sideX, #sideO{
+		font-size: 100px;
+		padding-top: 200px;
+	}
+	#gameboard > div > div {
+		font-size: 80px;
+	}
+	#gameboard > div {
+		margin-top: -30px;
+	}
+}
