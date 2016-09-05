@@ -833,9 +833,9 @@ function main() {
 			else if(this.id == 'grid8' && array.join('') == "xoxooaaxa") { $('#grid5').html(comp); array[8] = 'x'; array[5] = 'o'; }
 
 			// fourth move if the first move is in grid0, second move is in grid3, third move is in grid2, and the fourth move is in grid5
-			else if(this.id == 'grid5' && array.join('') == "xoxxoaoaa") { $('#grid5').html(comp); array[5] = 'x'; array[5] = 'o'; }
+			else if(this.id == 'grid5' && array.join('') == "xoxxoaoaa") { $('#grid7').html(comp); array[5] = 'x'; array[7] = 'o'; }
 			// fourth move if the first move is in grid0, second move is in grid3, third move is in grid2, and the fourth move is in grid7
-			else if(this.id == 'grid7' && array.join('') == "xoxxoaoaa") { $('#grid7').html(comp); array[7] = 'x'; array[7] = 'o'; }
+			else if(this.id == 'grid7' && array.join('') == "xoxxoaoaa") { $('#grid5').html(comp); array[7] = 'x'; array[5] = 'o'; }
 			// fourth move if the first move is in grid0, second move is in grid3, third move is in grid2, and the fourth move is in grid8
 			else if(this.id == 'grid8' && array.join('') == "xoxxoaoaa") { $('#grid7').html(comp); array[8] = 'x'; array[7] = 'o'; }
 
