@@ -14,7 +14,6 @@ html, body {
 }
 #x, #o {
 	height: 90vh;
-	width: 50vw;
 	position: relative;
 }
 #x, #sideX {
