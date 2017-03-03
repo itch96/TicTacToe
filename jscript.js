@@ -27,10 +27,10 @@ function main() {
 		$('#choseHeader').animate({top: '-10vh'}, 400);
 		setTimeout(function(){
 			$('#chose').css({display: 'none'});
-			$('#status').css({display: 'block', top: '-10vh'}).animate({top: '0vh'}, 400);
-			$('#sideX').css({display: 'block', left: '-10vh'}).animate({left: '0vh'}, 400);
-			$('#sideO').css({display: 'block', right: '-10vh'}).animate({right: '0vh'}, 400);
-			$('#comment').css({display: 'block', bottom: '-10vh'}).animate({bottom: '0vh'}, 400);
+			$('#status').css({display: 'block', top: '-10vh'}).animate({top: '0%'}, 400);
+			$('#sideX').css({display: 'block', left: '-10vh'}).animate({left: '0%'}, 400);
+			$('#sideO').css({display: 'block', right: '-10vh'}).animate({right: '0%'}, 400);
+			$('#comment').css({display: 'block', bottom: '-10vh'}).animate({bottom: '0%'}, 400);
 			$('#gameboard').fadeIn().css({display: 'block'});
 		}, 600);
 	});

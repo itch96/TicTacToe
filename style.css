@@ -10,18 +10,31 @@ html, body {
 	height: 10vh;
 	background-color: #1abc9c;
 	position: relative;
-	padding-top: 3vh;
+	vertical-align: middle;
+	text-align: center;
+	line-height: 10vh;
 }
 #x, #o {
 	height: 90vh;
 	width: 50vw;
 	position: relative;
+	vertical-align: middle;
+	text-align: center;
+	line-height: 90vh;
+}
+#x:hover, #o:hover {
+	animation: lift 0.5s ease-in-out forwards;
+}
+@keyframes lift {
+	100% {text-shadow: 0px 0px 15px black; transform: scaleX(1.1);}
 }
 #x, #sideX {
 	background-color: #3498db;
+	left: 0%;
 }
 #o, #sideO {
 	background-color: #e74c3c;
+	right: 0%;
 }
 #game {
 	z-index: 1;
@@ -33,29 +46,49 @@ html, body {
 	height: 10vh;
 	position: relative;
 	display: none;
+	vertical-align: middle;
+	text-align: center;
+	line-height: 10vh;
 }
 #sideX, #sideO {
 	height: 80vh;
 	position: relative;
 	display: none;
-}
-#sideX {
-	left: -100%;
-}
-#sideO {
-	right: -100%;
+	vertical-align: middle;
+	text-align: center;
+	line-height: 80vh;
 }
 #comment {
 	background-color: #9b59b6;
 	height: 10vh;
 	position: relative;
-	bottom: -10vh;
+	bottom: 0;
 	display: none;
+	vertical-align: middle;
+	text-align: center;
+	line-height: 10vh;
+}
+a, a:hover, a:visited, a:active {
+	color: white;
+	text-decoration: none;
 }
 #gameboard{
 	display: none;
 	background-color: #f39c12;
 	height: 80vh;
+	vertical-align: middle;
+	position: relative;
+	margin: auto;
+	top: 0; left: 0; bottom: 0; right: 0;
+}
+span {
+	color: red;
+	animation: heart 1s ease-in-out infinite;
+}
+@keyframes heart {
+	0% {transform: scale(1);}
+	50% {transform: scale(1.1); text-shadow: 0px 0px 5px darkred;}
+	100% {transform: scale(1);}
 }
 #gameboard > div > div {
 	height: 50px;
@@ -116,23 +149,18 @@ html, body {
 	}
 	#status {
 		font-size: 20px;
-		padding-top: 2vh;
 	}
 	#comment {
 		font-size: 17px;
-		padding-top:  2vh;
 	}
 	#choseHeader {
 		font-size: 20px;
-		padding-top: 2vh;
 	}
 	#x, #o {
 		font-size: 100px;
-		padding-top: 30vh;
 	}
 	#sideX, #sideO{
 		font-size: 30px;
-		padding-top: 170px;
 	}
 	#gameboard > div > div {
 		font-size: 20px;
@@ -144,23 +172,18 @@ html, body {
 	}
 	#status {
 		font-size: 20px;
-		padding-top: 2vh;
 	}
 	#comment {
 		font-size: 17px;
-		padding-top:  2vh;
 	}
 	#choseHeader {
 		font-size: 20px;
-		padding-top: 2vh;
 	}
 	#x, #o {
 		font-size: 100px;
-		padding-top: 30vh;
 	}
 	#sideX, #sideO{
 		font-size: 33px;
-		padding-top: 170px;
 	}
 	#gameboard > div > div {
 		font-size: 20px;
@@ -176,23 +199,18 @@ html, body {
 	}
 	#status {
 		font-size: 20px;
-		padding-top: 2vh;
 	}
 	#comment {
 		font-size: 17px;
-		padding-top:  2vh;
 	}
 	#choseHeader {
 		font-size: 20px;
-		padding-top: 2vh;
 	}
 	#x, #o {
 		font-size: 100px;
-		padding-top: 30vh;
 	}
 	#sideX, #sideO{
 		font-size: 35px;
-		padding-top: 170px;
 	}
 	#gameboard > div > div {
 		font-size: 20px;
@@ -208,23 +226,18 @@ html, body {
 	}
 	#status {
 		font-size: 30px;
-		padding-top: 2vh;
 	}
 	#comment {
 		font-size: 20px;
-		padding-top:  2vh;
 	}
 	#choseHeader {
 		font-size: 25px;
-		padding-top: 2vh;
 	}
 	#x, #o {
 		font-size: 120px;
-		padding-top: 30vh;
 	}
 	#sideX, #sideO{
 		font-size: 50px;
-		padding-top: 200px;
 	}
 	#gameboard > div > div {
 		font-size: 50px;
@@ -236,23 +249,18 @@ html, body {
 	}
 	#status {
 		font-size: 30px;
-		padding-top: 2vh;
 	}
 	#comment {
 		font-size: 20px;
-		padding-top:  2vh;
 	}
 	#choseHeader {
 		font-size: 25px;
-		padding-top: 2vh;
 	}
 	#x, #o {
 		font-size: 150px;
-		padding-top: 20vh;
 	}
 	#sideX, #sideO{
 		font-size: 70px;
-		padding-top: 200px;
 	}
 	#gameboard > div > div {
 		font-size: 48px;
@@ -268,23 +276,18 @@ html, body {
 	}
 	#status {
 		font-size: 30px;
-		padding-top: 2vh;
 	}
 	#comment {
 		font-size: 25px;
-		padding-top:  2vh;
 	}
 	#choseHeader {
 		font-size: 30px;
-		padding-top: 2vh;
 	}
 	#x, #o {
 		font-size: 200px;
-		padding-top: 25vh;
 	}
 	#sideX, #sideO{
 		font-size: 100px;
-		padding-top: 200px;
 	}
 	#gameboard > div > div {
 		font-size: 80px;
